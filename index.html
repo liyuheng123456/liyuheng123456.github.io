@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> My Personal Website</title>
+    <style>
+        nav {
+            font-size: 24px;
+        }
+
+        .left {
+            position: absolute;
+            top: 50px;
+            left: 90px;
+            width: 300px;
+            margin-top: 300px;
+            margin-right: 100px;
+            box-sizing: border-box;
+        }
+
+        .right {
+            position: absolute;
+            top: 380px;
+            left: 1000px;
+            width: 300px;
+            height: 210px;
+            margin-left: 100px;
+            box-sizing: border-box;
+            float: right;
+        }
+        .image3 {
+            position: absolute;
+            top: 500px;
+            left: 510px;
+            width: 320px;
+            height: 210px;
+            margin-left: 100px;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+
+        body {
+            font-family: KaiTi, sans-serif;
+            font-size: 20px;
+            background-image: url("black.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow: auto;
+            margin: 0;
+        }
+
+        main {
+            margin-top: 50px;
+        }
+
+        section {
+            margin: 0 0 30px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            background-size: cover;
+            border-radius: 6px;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+
+            section:hover {
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            }
+
+        h1 {
+            position: absolute;
+            top: 70px;
+            left: 680px;
+            text-align: center;
+            color: #fff;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        p {
+            margin: 0;
+        }
+
+        #about, #education, #ouxiang{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .circle {
+            position: absolute;
+            top: 170px;
+            left: 660px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            animation-name: rotate; 
+            animation-duration: 16s; 
+            animation-iteration-count: infinite; 
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(5deg); 
+            }
+
+            to {
+                transform: rotate(360deg); 
+            }
+        }
+
+            .circle img {
+                display: block;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin: -1px;
+                filter: brightness(70%)blur(1px);
+            }
+    </style>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle">
+        <img src="kk.jpg" >
+    </div>
+    <h1>个人简介</h1>
+    <main>
+        <section id="education" class="right">
+
+            <ul>
+                <li>个人经历: 2021.09 -至今</li>
+                <li>福建理工大学 </li>
+                <li>计数学院  担任干部</li>
+                <li>爱好打打乒乓球，或玩玩游戏 </li>
+            </ul>
+        </section>
+
+        <section id="about" class="left">
+            <ul>
+                <li>姓名: 李煜恒</li>
+                <li>性别: 男</li>
+                <li>  2003,11,14 </li>
+                <li>学校: 福建理工大学</li>
+            </ul>
+        </section>
+
+        <section id="ouxiang" class="image3">
+            <ul>
+                <li>我是一个特别固执的人</li>
+                <li>我从来不会在意别人跟我说什么 让我去做</li>
+                <li>如果你也可以像我一样</li>
+                <li>那我觉得,这件事情</li>
+                <li>泰酷啦！！！</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Personal Website</p>
+    </footer>
+</body>
+</html>
